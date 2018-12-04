@@ -21,8 +21,8 @@ def pageRank(Graph, s = 0.2, maxerr = .001):
     	prob=prob_new
     	count+=1
         
-    # return normalized pagerank
-    return prob_new/sum(prob_new)
+    # return pagerank
+    return prob_new
 
 if __name__=='__main__':
     G = np.array([[0,0,0,0,1,0,0],
